@@ -1,6 +1,7 @@
-<div class="container">
+
   {$SESSION_FLASH}
 <section id="index">
+<div class="container">
   <div class="row">
     {if !empty($TWITTER_FEED) || !empty($VOICE_VIEWER)}
     <div class="col-md-9">
@@ -30,10 +31,16 @@
 	<div class="col-md-3">
 	  <!-- Social -->
 	  <h2>{$SOCIAL}</h2>
+      <div class="header_wrapper">
+         <p>{$PLAYERS_ONLINE}</p>
+         <p>{$CONNECT_WITH}</p>
+      </div>
+        
+    <div class="header_wrapper">
 	  {if !empty($TWITTER_FEED)}
 	  {$TWITTER_FEED}
 	  {/if}
-	  
+        </div>
 	  {if !empty($VOICE_VIEWER)}
 	  {if {$VOICE_VIEWER_TITLE} != 'Discord'}
 	  <div class="well well-sm">

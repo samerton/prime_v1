@@ -30,11 +30,11 @@ h1,h2,h3,h4,h5,h6,p,a {
 }
 .panel-primary > .panel-heading {
     color: #fff;
-    background-color: #337ab7;
-    border-color: #337ab7;
+    background-color: #2A7BA1;
+    border-color: #2A7BA1;
     border-radius: 0px;
     font-size: 1.5em;
-    color: #f9fbfc;
+    color: #fff;
     text-decoration: none;
     background-color: #2A7BA1;
     padding: 20px 10px;
@@ -51,6 +51,9 @@ h1,h2,h3,h4,h5,h6,p,a {
 }
 #intro .content {
     padding: 50px 25px 80px;
+}
+#intro h1 {
+    text-align: center;
 }
 #intro h1>a {
     color: #fff;
@@ -71,9 +74,6 @@ h1,h2,h3,h4,h5,h6,p,a {
     border: 3px solid #fff;
 }
 }
-#intro p {
-    color: #fff;
-}
 #intro .header_wrapper {
     background: #2A7BA1;
     padding: 8px;
@@ -83,7 +83,7 @@ h1,h2,h3,h4,h5,h6,p,a {
 
 /* navigation section */
 .navbar-default {
-	background: #fff;
+	background: #2A7BA1;
 	border: none;
     border-color: transparent;
 	box-shadow: 0 2px 8px 0 rgba(50, 50, 50, 0.03);
@@ -99,7 +99,7 @@ navbar-right {
     margin-right: 10px;
 }
 .navbar-default .navbar-nav li a {
-	color: #6f6f6f;
+	color: #fff;
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 300;
 	outline: none;
@@ -108,7 +108,7 @@ navbar-right {
 	padding-right: 15px;
 	padding-left: 20px;
 	line-height: 40px;
-	border-top: 2px solid #fff;
+	border-top: 2px solid #2A7BA1;
 }
 .navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover {
 	color: #2A7BA1;
@@ -119,10 +119,10 @@ navbar-right {
 	padding-right: 15px;
 	padding-left: 20px;
 	line-height: 40px;
-	border-top: 2px solid #2A7BA1;
+	border-top: 2px solid #fff;
 }
 .navbar-default .navbar-nav > .active > a {
-	color: #2A7BA1;
+	color: #fff;
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 300;
 	outline: none;
@@ -136,7 +136,7 @@ navbar-right {
 	color: #2A7BA1;
 	background-color: ;
     transition: all 0.4s ease-in-out;
-	border-top: 2px solid #2A7BA1;
+	border-top: 2px solid #fff;
 }
 .navbar-default .navbar-toggle {
 	border: none;
@@ -172,9 +172,10 @@ navbar-right {
     background: #fff;
     text-transform: uppercase;
     text-align: left;
+    border-top: 0;
 }
 .navbar-default .navbar-nav .dropdown-menu li a:hover {
-    color: #49B7A2;
+    color: #2A7BA1;
     background: #fff;
     text-transform: uppercase;
 }
@@ -185,4 +186,18 @@ navbar-right {
 #index h2 {
     text-align: center;
     text-transform: uppercase;
+}
+#index p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+#index .header_wrapper {
+    background: #fff;
+    padding: 8px;
+    margin-bottom: 10px;
+    border-radius:0;
+    padding-top: 16px;
+    border: 1px solid #ddd;
+    box-shadow: 1px 2px 3px rgba(0,0,0,.1);
 }
