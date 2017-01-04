@@ -1,3 +1,4 @@
+<section id="topic">
 <div class="container">
   {$BREADCRUMBS}
   
@@ -19,7 +20,7 @@
 	  </div>
 	  <div class="panel-body" id="{$reply.post_id}">
 	    <div class="row">
-		  <div class="col-md-3">
+		  <div class="col-md-3 user">
 		    <center>
 			  {$reply.avatar}
 			  <br /><br />
@@ -61,3 +62,4 @@
   {$QUICK_REPLY}
   
 </div>
+</section>

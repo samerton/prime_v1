@@ -304,6 +304,28 @@ navbar-right {
     color: #fff;
     border: 3px solid #ddd;
 }
+/* Topic */
+#topic .container {
+    background: #fff;
+    padding-top: 30px;
+}
+#topic .user {
+    background: #F4F5F5;
+    padding-top: 10px;
+}
+#topic .btn-primary {
+    background: #2A7BA1;
+    border-radius: 0;
+    color: #fff;
+    border: 3px solid #fff;
+    transition: all 0.4s ease-out;
+}
+#topic .btn-primary:hover {
+    background: #2A7BA1;
+    border-radius: 0;
+    color: #fff;
+    border: 3px solid #ddd;
+}
 .input-sm {
     border-radius: 0;
     border: 0;
