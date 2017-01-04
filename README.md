@@ -17,10 +17,6 @@ You're not allowed to:
 - Sell it
 - Give it out as your own
 
-Just upload to Root Directory!
-
-To edit Title etc. go to config.php.
-
 ```
 config.php
 core/
