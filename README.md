@@ -7,8 +7,9 @@ You're not allowed to:
 - Sell it
 - Give it out as your own
 
-Upload to Root Directory!
+Just upload to Root Directory!
 ```
+config.php
 core/
 ├── includes/
 │   ├── template/
