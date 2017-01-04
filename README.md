@@ -1,5 +1,12 @@
 Template for NamelessMC
 
+You're allowed to:
+- Rewrite it
+
+You're not allowed to:
+- Sell it
+- Give it out as your own
+
 Upload Templates and Themes Folder to Styles.
 ```
 core/
