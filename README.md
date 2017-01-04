@@ -7,7 +7,7 @@ You're not allowed to:
 - Sell it
 - Give it out as your own
 
-Upload Templates and Themes Folder to Styles.
+Upload to Root Directory!
 ```
 core/
 ├── includes/
