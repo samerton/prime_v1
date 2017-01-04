@@ -223,6 +223,26 @@ navbar-right {
     color: #5c676e;
     text-transform: uppercase;
 }
+
+#foren .container {
+    background: #fff;
+    padding-top: 30px;
+}
+#foren .well {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 0;
+    box-shadow: 1px 2px 3px rgba(0,0,0,.1);
+    -webkit-box-shadow: 1px 2px 3px rgba(0,0,0,.1);
+    -moz-box-shadow: 1px 2px 3px rgba(0,0,0,.1);
+    -khtml-box-shadow: 1px 2px 3px rgba(0,0,0,.1);
+}
+.breadcrumb {
+    background-color: #fff;
+    background: #fff;
+    border-radius: 0;
+    border: 1px solid #ddd;
+}
 .nav-list .nav-header {
     padding: 21px 34px;
     background: #2A7BA1;
@@ -309,4 +329,28 @@ navbar-right {
 .signup {
     border: 2px solid #2A7BA1;
     width: 10%;
+}
+/* Footer */
+#foot {
+    padding: 20px;
+    padding-top: 30px;
+    background: #fff;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#foot ul>li {
+    display: inline;
+    padding-right: 5px;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+}
+#foot ul>li>a {
+    display: inline;
+    padding-right: 5px;
+    padding-right: 10px;
+    padding-left: 10px;
+    display: block;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
 }
