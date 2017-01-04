@@ -1,5 +1,3 @@
-
-  {$SESSION_FLASH}
 <section id="index">
 <div class="container">
   <div class="row">
