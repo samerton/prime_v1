@@ -1,5 +1,15 @@
 Template for NamelessMC
 
+How to install:
+
+    Upload to Root-Directory.
+    Login to AdminCP.
+    Go to Style.
+    Click "Install Theme" > Scan > Find "PRIME" and Activate.
+    Next click on "Templates" > "Install Template" > Scan > Find "PRIME" and Activate.
+
+Thats it.
+
 You're allowed to:
 - Rewrite it
 
