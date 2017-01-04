@@ -13,6 +13,8 @@ config.php
 core/
 ├── includes/
 │   ├── template/
+pages/
+├── forum/
 styles/
 ├── templates/
 │   ├── PRIME/
