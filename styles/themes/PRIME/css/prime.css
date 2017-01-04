@@ -304,6 +304,56 @@ navbar-right {
     color: #fff;
     border: 3px solid #ddd;
 }
+/* Profil */
+#profil .container {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background: #fff;
+}
+#profil .panel-info > .panel-heading {
+    margin-top: 20px;
+    border-radius: 0;
+    background: #36404A;
+    color: #fff;
+    border-bottom: 3px solid #2A7BA1;
+}
+#profil h2 {
+    font-size: 18pt;
+}
+#profil .jumbotron {
+    background: #fff;
+}
+#profil .nav-tabs > li.active > a {
+    border-radius: 0;
+}
+.label-danger {
+    background-color: darkred;
+    height: 16px;
+    text-align: center;
+    color: #FFF;
+    font-size: 12px;
+    padding-bottom: 5px;
+    box-shadow: 1px 1px 3px rgba(0,0,0, 0.25);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 2px;
+}
+.label-success {
+    background-color: #389538;
+    height: 16px;
+    text-align: center;
+    color: #FFF;
+    font-size: 12px;
+    padding-bottom: 5px;
+    box-shadow: 1px 1px 3px rgba(0,0,0, 0.25);
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 2px;
+}
 /* Topic */
 #topic .container {
     background: #fff;
@@ -365,6 +415,48 @@ navbar-right {
 .signup {
     border: 2px solid #2A7BA1;
     width: 10%;
+}
+#new_topic .container {
+    background: #fff;
+    padding-top: 10px;
+    padding-bottom: 30px;
+}
+#new_topic .btn-primary {
+    background: #2A7BA1;
+    border-radius: 0;
+    padding: 10px 20px;
+    color: #fff;
+    border: 3px solid #fff;
+    transition: all 0.4s ease-out;
+}
+#new_topic .btn-primary:hover {
+    background: #2A7BA1;
+    border-radius: 0;
+    color: #fff;
+    border: 3px solid #ddd;
+}
+#new_topic .btn-danger {
+    background: #D9534F;
+    border-radius: 0;
+    padding: 10px 20px;
+    color: #fff;
+    border: 3px solid #fff;
+    transition: all 0.4s ease-out;
+}
+#new_topic .btn-danger:hover {
+    background: #D9534F;
+    border-radius: 0;
+    color: #fff;
+    border: 3px solid #ddd;
+}
+#new_topic .well {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 0;
+    box-shadow: 1px 2px 3px rgba(0,0,0,.1);
+    -webkit-box-shadow: 1px 2px 3px rgba(0,0,0,.1);
+    -moz-box-shadow: 1px 2px 3px rgba(0,0,0,.1);
+    -khtml-box-shadow: 1px 2px 3px rgba(0,0,0,.1);
 }
 /* Footer */
 #foot {
