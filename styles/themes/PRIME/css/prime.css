@@ -237,6 +237,20 @@ navbar-right {
     -moz-box-shadow: 1px 2px 3px rgba(0,0,0,.1);
     -khtml-box-shadow: 1px 2px 3px rgba(0,0,0,.1);
 }
+#foren .btn-primary {
+    background: #2A7BA1;
+    border-radius: 0;
+    padding: 10px 20px;
+    color: #fff;
+    border: 3px solid #fff;
+    transition: all 0.4s ease-out;
+}
+#foren .btn-primary:hover {
+    background: #2A7BA1;
+    border-radius: 0;
+    color: #fff;
+    border: 3px solid #ddd;
+}
 .breadcrumb {
     background-color: #fff;
     background: #fff;

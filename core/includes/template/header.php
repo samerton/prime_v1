@@ -13,6 +13,8 @@
 /*
  *  Check to see if the theme actually exists..
  */
+require_once('config.php');
+
 if(!is_dir('styles/themes/' . $theme_result)){
 	// Doesn't exist
 	// Display an error
@@ -22,7 +24,6 @@ if(!is_dir('styles/themes/' . $theme_result)){
 	echo '<link href="' . PATH . 'styles/themes/Bootstrap/css/bootstrap.min.css" rel="stylesheet">' . PHP_EOL;
 	echo '<link href="' . PATH . 'styles/themes/Bootstrap/css/custom.css" rel="stylesheet">' . PHP_EOL;
 	echo '<link href="' . PATH . 'styles/themes/Bootstrap/css/font-awesome.min.css" rel="stylesheet">' . PHP_EOL;
-	
 } else {
 	// Exists
 	// Load the css
@@ -36,6 +37,7 @@ echo '<link href="' . PATH . 'core/assets/css/toastr.css" rel="stylesheet">' . P
 echo '<link href="' . PATH . 'core/assets/css/custom_core.css" rel="stylesheet">' . PHP_EOL;
 echo '<link href="' . PATH . 'styles/themes/PRIME/css/prime.css" rel="stylesheet">' . PHP_EOL;
 echo '<link rel="icon" href="' . PATH . 'core/assets/favicon.ico">';
+echo '<title>' . $website_title . '</title>' . PHP_EOL;
 
 // Custom
 foreach($custom_css as $item){
