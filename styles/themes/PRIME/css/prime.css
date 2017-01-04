@@ -160,16 +160,26 @@ navbar-right {
 	letter-spacing: 1px;
 }
 .navbar-brand {
-    margin-right: -15px;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    outline: none;
+    font-size: 13px;
+    padding-right: 15px;
+    padding-left: 20px;
+    line-height: 40px;
+    border-top: 2px solid #2A7BA1;
 }
-.navbar-brand a {
-	color: #333;
-	font-weight: 200;
-	outline: none;
-    font-size: 24px;
-	padding-right: 15px;
-	padding-left: 20px;
-    line-height: 35px;
+.navbar-brand:hover {
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    outline: none;
+    font-size: 13px;
+    padding-right: 15px;
+    padding-left: 20px;
+    line-height: 40px;
+    border-top: 2px solid #2A7BA1;
 }
 .navbar-default .navbar-nav .dropdown-menu li a {
     color: #696969;
@@ -457,6 +467,51 @@ navbar-right {
     -webkit-box-shadow: 1px 2px 3px rgba(0,0,0,.1);
     -moz-box-shadow: 1px 2px 3px rgba(0,0,0,.1);
     -khtml-box-shadow: 1px 2px 3px rgba(0,0,0,.1);
+}
+/* admin */
+#admin .container {
+    background: #fff;
+}
+#admin .btn-primary {
+    background: #2A7BA1;
+    border-radius: 0;
+    padding: 10px 20px;
+    color: #fff;
+    border: 3px solid #fff;
+    transition: all 0.4s ease-out;
+}
+#admin .btn-primary:hover {
+    background: #2A7BA1;
+    border-radius: 0;
+    color: #fff;
+    border: 3px solid #ddd;
+}
+#admin .btn-danger {
+    background: #D9534F;
+    border-radius: 0;
+    padding: 10px 20px;
+    color: #fff;
+    border: 3px solid #fff;
+    transition: all 0.4s ease-out;
+}
+#admin .btn-danger:hover {
+    background: #D9534F;
+    border-radius: 0;
+    color: #fff;
+    border: 3px solid #ddd;
+}
+#admin .input-lg {
+    border-radius: 0;
+    border: 0;
+    border-bottom: 2px solid #ddd;
+    width: 100%;
+}
+#admin .input-lg:focus {
+    border-radius: 0;
+    border: 0;
+    border-bottom: 2px solid #2A7BA1;
+    width: 100%;
+    transition: all 1.5s ease-out;
 }
 /* Footer */
 #foot {
