@@ -8,3 +8,5 @@ styles/
 └── themes/
     ├── PRIME/
 ```
+
+[![Selenium Test Status](http://i.imgur.com/dnus9Qz.jpg)](#)
