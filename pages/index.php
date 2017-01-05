@@ -101,7 +101,7 @@ $smarty->assign('PLAYERS_ONLINE', str_replace('{x}', $player_count, $general_lan
     <meta http-equiv="cache-control" content="no-cache" />
     <meta http-equiv="expires" content="0" />
     <meta http-equiv="pragma" content="no-cache" />
-    <title><?php echo $website_title;?></title>  
+    <title><?php echo $sitename;?></title>  
       
     <link href="/styles/themes/PRIME/css/prime.css" rel="stylesheet">
 <?php if(isset($custom_meta)){ echo $custom_meta; } ?>

@@ -1,7 +1,7 @@
 <section id="forum">
 <div class="container">
   <div class="row">
-	<div class="col-md-8">
+	<div class="col-md-7">
 	
 	  {$SEARCH_FORM}
 	  
@@ -43,7 +43,7 @@
 	  
 	  
 	</div>
-    <div class="col-md-4">
+    <div class="col-md-5">
 	  {$BREADCRUMBS}
 	  <table class="table table-striped">
 		<tr>

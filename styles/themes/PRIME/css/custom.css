@@ -23,6 +23,9 @@
 /* 
 Only Needed in Multi-Coloured Variation 
  */
+.social {
+    color: #6f6f6f;
+}
 .social-fb:hover {
 	color: #3B5998;
 }

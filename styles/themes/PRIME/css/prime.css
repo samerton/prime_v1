@@ -186,15 +186,39 @@ navbar-right {
 /* Index Section */
 #index {
     background: #fff;
+    padding-bottom: 30px;
+}
+#index hr {
+    width: 6%;
+    border: 2px solid #2A7BA1;
+    margin-bottom: 30px;
+    padding-top: 0;
 }
 #index h2 {
     text-align: center;
     text-transform: uppercase;
+    color: #333;
+    padding-bottom: 0;
 }
 #index p {
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
     text-transform: uppercase;
+}
+#index .panel-heading a {
+    font-size: 16px;
+}
+#index .panel-heading>.label-info {
+    font-size: 12px;
+    font-weight: 300;
+    color: #fff;
+    background: transparent;
+}
+#index .panel-heading>.label-info>a {
+    font-size: 12px;
+    color: #fff;
+    font-weight: 300;
+    background: transparent;
 }
 #index .header_wrapper {
     background: #fff;
@@ -204,6 +228,12 @@ navbar-right {
     padding-top: 16px;
     border: 1px solid #ddd;
     box-shadow: 1px 2px 3px rgba(0,0,0,.1);
+}
+#index .panel-heading {
+    text-align: center;
+}
+#index .pull-right a {
+    color: #2A7BA1;
 }
 /* Forum */
 #forum .container {
@@ -460,11 +490,9 @@ navbar-right {
 }
 /* Footer */
 #foot {
-    padding: 20px;
-    padding-top: 30px;
     background: #fff;
     margin-top: 10px;
-    margin-bottom: 10px;
+    text-align: center;
 }
 #foot ul>li {
     display: inline;
@@ -476,9 +504,7 @@ navbar-right {
 #foot ul>li>a {
     display: inline;
     padding-right: 5px;
-    padding-right: 10px;
     padding-left: 10px;
-    display: block;
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
 }
