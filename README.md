@@ -30,7 +30,3 @@ styles/
 └── themes/
     ├── PRIME/
 ```
-
-[![Screenshot-1](https://i.imgur.com/dnus9Qz.jpg)](#)
-[![Screenshot-2](https://i.imgur.com/IMk4zuU.jpg)](#)
-[![Screenshot-3](https://i.imgur.com/s0q6hwU.jpg)](#)
