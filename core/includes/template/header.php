@@ -13,7 +13,7 @@
 /*
  *  Check to see if the theme actually exists..
  */
-require_once('config.php');
+require('styles/themes/PRIME/css/edithere.php');
 
 if(!is_dir('styles/themes/' . $theme_result)){
 	// Doesn't exist
@@ -35,7 +35,7 @@ if(!is_dir('styles/themes/' . $theme_result)){
 // Global
 echo '<link href="' . PATH . 'core/assets/css/toastr.css" rel="stylesheet">' . PHP_EOL;
 echo '<link href="' . PATH . 'core/assets/css/custom_core.css" rel="stylesheet">' . PHP_EOL;
-echo '<link href="' . PATH . 'styles/themes/PRIME/css/prime.css" rel="stylesheet">' . PHP_EOL;
+echo '<link href="' . PATH . 'styles/themes/PRIME/css/prime.php" rel="stylesheet">' . PHP_EOL;
 echo '<link rel="icon" href="' . PATH . 'core/assets/favicon.ico">';
 echo '<title>' . $sitename . '</title>' . PHP_EOL;
 
