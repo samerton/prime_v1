@@ -29,6 +29,7 @@
 	<div class="col-md-3">
 	  <!-- Social -->
 	  <h2>{$SOCIAL}</h2>
+        <hr>
       <div class="header_wrapper">
          <p>{$PLAYERS_ONLINE}</p>
          <p>{$CONNECT_WITH}</p>
