@@ -1,7 +1,9 @@
 -----------------
 
-Upload the all folders to the root directory.
+Upload everything to the root directory.
 
-Finished. :)
+Finished.
+
+Enjoy. :)
 
 -----------------
