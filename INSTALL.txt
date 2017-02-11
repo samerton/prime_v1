@@ -1,6 +1,6 @@
 -----------------
 
-Upload the three folders to the root directory.
+Upload the all folders to the root directory.
 
 Finished. :)
 
