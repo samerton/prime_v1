@@ -1,6 +1,6 @@
- <?php
-    header("Content-type: text/css; charset: UTF-8")
- ?>
+<?php
+header("Content-type: text/css");
+?>
 <?php require("edithere.php"); ?>
 /*
 
