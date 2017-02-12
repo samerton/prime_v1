@@ -54,7 +54,7 @@ h1,h2,h3,h4,h5,h6,p,a {
             ),
         url('<?php print $bg_image;?>');
     background-attachment: fixed;
-    background-position: bottom center;
+    background-position: top center;
     background-size: cover;
 }
 #intro .content {
@@ -188,8 +188,11 @@ navbar-right {
 }
 /* Index Section */
 #index {
-    background: #fff;
+    background: <?php print $bg_color;?>;
     padding-bottom: 30px;
+}
+#index .container {
+    background: #fff;
 }
 #index hr {
     width: 6%;
@@ -211,7 +214,7 @@ navbar-right {
 #index .panel-heading a {
     font-size: 16px;
 }
-#index .panel-heading a:hover, a: focus {
+#index .panel-heading a:hover, a:focus {
     color: #fff;
 }
 #index .panel-heading>.label-info {
@@ -225,6 +228,9 @@ navbar-right {
     color: #fff;
     font-weight: 300;
     background: transparent;
+}
+#index .panel-body {
+    margin-bottom: 30px;
 }
 #index .header_wrapper {
     background: #fff;
@@ -242,6 +248,9 @@ navbar-right {
     color: <?php print $color;?>;
 }
 /* Forum */
+#forum {
+    padding-bottom: 30px;
+}
 #forum .container {
     background: #fff;
     padding: 40px 30px;
@@ -259,6 +268,11 @@ navbar-right {
     color: #5c676e;
     text-transform: uppercase;
 }
+#forum .panel-default > .panel-heading {
+    background: <?php print $color;?>;
+    color: #fff;
+    border-radius: 0;
+}
 
 #foren .container {
     background: #fff;
@@ -273,7 +287,7 @@ navbar-right {
     -moz-box-shadow: 1px 2px 3px rgba(0,0,0,.1);
     -khtml-box-shadow: 1px 2px 3px rgba(0,0,0,.1);
 }
-#foren .btn-primary {
+#forum .btn-primary {
     background: <?php print $color;?>;
     border-radius: 0;
     padding: 10px 20px;
@@ -281,7 +295,7 @@ navbar-right {
     border: 3px solid #fff;
     transition: all 0.4s ease-out;
 }
-#foren .btn-primary:hover {
+#forum .btn-primary:hover {
     background: <?php print $color;?>;
     border-radius: 0;
     color: #fff;
@@ -292,22 +306,6 @@ navbar-right {
     background: #fff;
     border-radius: 0;
     border: 1px solid #ddd;
-}
-.nav-list .nav-header {
-    padding: 10px 15px;
-    background: <?php print $color;?>;
-    color: #fff;
-    text-shadow: none;
-    font-size: 16px;
-}
-.nav-list > li > a {
-    padding: 5px 15px;
-    border: 1px solid #ddd;
-}
-.nav-list > .active > a {
-    background-color: #fff;
-    color: #333;
-    text-shadow: none;
 }
 /* SignIn */
 #signin h2 {
@@ -501,9 +499,14 @@ navbar-right {
 }
 /* Footer */
 #foot {
-    background: #fff;
+    background: #333333;
     margin-top: 10px;
+    border-top: 3px solid rgba(42, 123, 161, 0.62);
     text-align: center;
+}
+#foot hr {
+    width: 70%;
+    border: 1px solid #fff;
 }
 #foot ul>li {
     display: inline;
@@ -512,7 +515,11 @@ navbar-right {
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
 }
+#foot .dropdown-menu li a {
+    color: #333;
+}
 #foot ul>li>a {
+    color: #fff;
     display: inline;
     padding-right: 5px;
     padding-left: 10px;

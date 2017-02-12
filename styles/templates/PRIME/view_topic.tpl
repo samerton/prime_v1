@@ -1,5 +1,5 @@
-<section id="topic">
-<div class="container">
+<section id="forum">
+ <div class="container">
   {$BREADCRUMBS}
   
   {$SESSION_SUCCESS_POST}
@@ -20,7 +20,7 @@
 	  </div>
 	  <div class="panel-body" id="{$reply.post_id}">
 	    <div class="row">
-		  <div class="col-md-3 user">
+		  <div class="col-md-3">
 		    <center>
 			  {$reply.avatar}
 			  <br /><br />

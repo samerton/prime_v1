@@ -20,7 +20,9 @@ if($inverse_navbar == 1){
 /*
  *  Any messages or alerts?
  */
-
+?>
+<!-- PRIME v1.5.1 -->
+<?php
  
 // Main navbar
 $main_navbar = array(
