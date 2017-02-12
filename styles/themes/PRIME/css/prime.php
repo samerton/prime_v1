@@ -499,7 +499,7 @@ navbar-right {
 }
 /* Footer */
 #foot {
-    background: #333333;
+    background: <?php print $foot_color;?>;
     margin-top: 10px;
     border-top: 3px solid rgba(42, 123, 161, 0.62);
     text-align: center;

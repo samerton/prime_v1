@@ -6,6 +6,7 @@
 
     $color               = "#2A7BA1"; // Primary Color
     $bg_color            = "#efefef"; // Background Color
+    $foot_color          = "#333"; // Footer Color
     $bg_image            = "https://i.imgur.com/tOgr0A8.jpg"; // Header Image
 
 
