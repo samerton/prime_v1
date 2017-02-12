@@ -5,7 +5,7 @@
 /*
 
     THEME: PRIME
-    VERSION: 1.2
+    VERSION: 1.5.1
 
     AUTHOR: Jona Feucht
     DEV-URI: https://jonafeucht.de
@@ -139,6 +139,11 @@ navbar-right {
 	line-height: 40px;
 	border-top: 2px solid <?php print $color;?>;
 }
+@media only screen and (max-width: 777px) {
+.navbar-default .navbar-nav li a {
+    text-align: center;
+}
+}
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
 	color: <?php print $color;?>;
 	background-color: ;
@@ -150,7 +155,7 @@ navbar-right {
 	padding-top: 12px;
 }
 .navbar-default .navbar-toggle .icon-bar {
-	background: #333;
+	background: #fff;
 	border-color: transparent;
 }
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
