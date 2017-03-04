@@ -1,101 +1,101 @@
-.navbar-inverse {
-	background: <?php print $color;?>;
-	border: none;
-    border-color: transparent;
-	box-shadow: 0 2px 8px 0 rgba(50, 50, 50, 0.03);
-	margin: 0 !important;
+<?php
+/*
+ *	Made by Partydragen
+ *  http://partydragen.com/
+ *
+ *  License: MIT
+ */
+
+// Ensure user is logged in, and is admin
+if($user->isLoggedIn()){
+	if($user->canViewACP($user->data()->id)){
+		if($user->isAdmLoggedIn()){
+			// Can view
+		} else {
+			Redirect::to('/admin');
+			die();
+		}
+	} else {
+		Redirect::to('/');
+		die();
+	}
+} else {
+	Redirect::to('/');
+	die();
 }
-.navbar-inverse img {
-    vertical-align: middle;
-    margin-top: 4px;
-}
-navbar-right {
-    float: right !important;
-    margin-right: 10px;
-}
-.navbar-inverse .navbar-nav li a {
-	color: #fff;
-	font-family: 'Montserrat', sans-serif;
-	font-weight: 300;
-	outline: none;
-    font-size: 13px;
-    text-transform: uppercase;
-	padding-right: 15px;
-	padding-left: 20px;
-	line-height: 40px;
-	border-top: 2px solid <?php print $color;?>;
-}
-.navbar-inverse .navbar-nav > li > a:focus, .navbar-inverse .navbar-nav > li > a:hover {
-	color: <?php print $color;?>;
-	font-family: 'Montserrat', sans-serif;
-	font-weight: 300;
-	outline: none;
-    font-size: 13px;
-	padding-right: 15px;
-	padding-left: 20px;
-	line-height: 40px;
-	border-top: 2px solid #fff;
-}
-.navbar-inverse .navbar-nav > .active > a {
-	color: #fff;
-	font-family: 'Montserrat', sans-serif;
-	font-weight: 300;
-	outline: none;
-    font-size: 13px;
-	padding-right: 15px;
-	padding-left: 20px;
-	line-height: 40px;
-	border-top: 2px solid <?php print $color;?>;
-}
-@media only screen and (max-width: 777px) {
-.navbar-inverse .navbar-nav li a {
-    text-align: center;
-}
-}
-.navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
-	color: <?php print $color;?>;
-	background-color: ;
-    transition: all 0.4s ease-in-out;
-	border-top: 2px solid #fff;
-}
-.navbar-inverse .navbar-toggle {
-	border: none;
-	padding-top: 12px;
-}
-.navbar-inverse .navbar-toggle .icon-bar {
-	background: #fff;
-	border-color: transparent;
-}
-.navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
-	background-color: transparent;
-    cursor: crosshair;
-}
-.navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
-    color: #333;
-    text-align: center;
-	letter-spacing: 1px;
-}
-.navbar-brand {
-    margin-right: -15px;
-}
-.navbar-brand a {
-	color: #333;
-	font-weight: 200;
-	outline: none;
-    font-size: 24px;
-	padding-right: 15px;
-	padding-left: 20px;
-    line-height: 35px;
-}
-.navbar-inverse .navbar-nav .dropdown-menu li a {
-    color: #696969;
-    background: #fff;
-    text-transform: uppercase;
-    text-align: left;
-    border-top: 0;
-}
-.navbar-inverse .navbar-nav .dropdown-menu li a:hover {
-    color: <?php print $color;?>;
-    background: #fff;
-    text-transform: uppercase;
-}
+ 
+$adm_page = "help";
+?>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Admin panel">
+    <meta name="author" content="<?php echo $sitename; ?>">
+	<meta name="robots" content="noindex">
+	<?php if(isset($custom_meta)){ echo $custom_meta; } ?>
+	
+	<?php
+	// Generate header and navbar content
+	// Page title
+	$title = $admin_language['help'];
+	
+	require('core/includes/template/generate.php');
+	?>
+	
+	<link href="/core/assets/plugins/switchery/switchery.min.css" rel="stylesheet">	
+	
+	<!-- Custom style -->
+	<style>
+	html {
+		overflow-y: scroll;
+	}
+	</style>
+	
+  </head>
+  <body>
+    <div class="container">
+	  <?php
+	  // Index page
+	  // Load navbar
+	  $smarty->display('styles/templates/' . $template . '/navbar.tpl');
+	  ?>
+	  <br />
+	  <div class="row">
+	    <div class="col-md-3">
+		  <?php require('pages/admin/sidebar.php'); ?>
+		</div>
+		<div class="col-md-9">
+			<div class="well">
+				<h3>If you need help you can ask for help here</h3>
+				* <a href="http://namelessmc.com/" target="_blank">NamelessMC Website</a></br>
+				* <a href="https://www.spigotmc.org/threads/34810/" target="_blank">Spigot Thread</a></br>
+				* <a href="https://www.spigotmc.org/threads/88001/" target="_blank">Spigot Resource</a></br>
+			        * <a href="http://simba.spi.gt/iris/?channels=NamelessMC" target="_blank">IRC Chat</a></br>
+	  			* <a href="https://discordapp.com/invite/QWdS9CB" target="_blank">Discord</a></br>
+
+				<h3>FAQs</h3>
+				* <a href="https://github.com/NamelessMC/Nameless/wiki/FAQs" target="_blank">FAQs</a></br>
+
+				<h3>Open Source</h3>
+				* <a href="https://github.com/NamelessMC/Nameless" target="_blank">Source Code on GitHub</a></br>
+
+				<h3>NamelessMC Plugin</h3>
+				* <a href="http://ci.namelessmc.com/jenkins/job/Nameless-Plugin/">Jenkins (Not released)</a></br>
+
+				<h3>Video Tutorial</h3>
+				* <a href="https://youtu.be/BlRz9gpS-Ew?t=3m12s" target="_blank">Setup Forums (v1.0.2)</a></br>
+				* <a href="https://youtu.be/BlRz9gpS-Ew?t=5m56s" target="_blank">Connect your Minecraft server (v1.0.2)</a></br>
+			</div>
+	    </div>
+	  </div>
+	</div>
+	<?php
+	// Footer
+	require('core/includes/template/footer.php');
+	$smarty->display('styles/templates/' . $template . '/footer.tpl');
+	?>
+  </body>
+</html>
