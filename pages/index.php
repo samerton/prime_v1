@@ -88,7 +88,7 @@ if($pre17 == 0){
 $smarty->assign('PLAYERS_ONLINE', str_replace('{x}', $player_count, $general_language['x_players_online']));
 ?>
 <!DOCTYPE html>
-<?php require('config.php');?>
+<?php require('editme.php');?>
 <html lang="en-EN">
   <head>
     <meta charset="<?php echo $website_charset;?>">
