@@ -278,7 +278,10 @@ navbar-right {
     color: #fff;
     border-radius: 0;
 }
-
+#forum .panel-heading a strong {
+    color: #fff;
+    font-weight: 300;
+}
 #foren .container {
     background: #fff;
     padding-top: 30px;
