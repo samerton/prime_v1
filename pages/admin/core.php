@@ -1038,6 +1038,8 @@ $adm_page = "core";
 				<input type="hidden" name="token" value="<?php echo Token::generate(); ?>">
 				<input type="submit" class="btn btn-primary" value="<?php echo $general_language['submit']; ?>">
 			  </form>
+	  
+			  
 				<?php
 				} else if($_GET['view'] == 'pages'){
 					// Pages

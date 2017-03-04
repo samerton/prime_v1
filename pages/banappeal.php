@@ -96,7 +96,7 @@ $page = $banappeal_language['ban_appeal'];
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Ban Appeal page for the <?php echo $sitename; ?> community">
-    <meta name="author" content="<?php echo $sitename; ?>">
+    <meta name="author" content="Partydragen">
 	<meta name="robots" content="noindex">
 	<?php if(isset($custom_meta)){ echo $custom_meta; } ?>
 	
@@ -123,6 +123,7 @@ $page = $banappeal_language['ban_appeal'];
 	$smarty->display('styles/templates/' . $template . '/navbar.tpl');
 	?>
 	<br />
+	<section id="apply">
 	<div class="container">
 	<?php 
 	    if(Session::exists('staff_app')){
@@ -131,11 +132,12 @@ $page = $banappeal_language['ban_appeal'];
 	?>
 	  <div class="well">
 		<h2><?php echo $banappeal_language['ban_appeal']; ?></h2>
+		<hr>
 		<?php
 		if(!isset($completed)){
 		?>
 		<div class="row">
-		  <div class="col-md-5">
+		  <div class="col-md-12">
 			<form action="" method="post">
 			<?php 
 			// Get all questions
@@ -166,14 +168,15 @@ $page = $banappeal_language['ban_appeal'];
 				} else {
 					// normal input tag
 			?>
-			  <label for="<?php echo htmlspecialchars($question->name); ?>"><?php echo htmlspecialchars($question->question); ?></label>
-			  <input type="text" class="form-control" id="<?php echo htmlspecialchars($question->name); ?>" name="<?php echo $question->id; ?>"><br />
+			  <label require="" for="<?php echo htmlspecialchars($question->name); ?>"><?php echo htmlspecialchars($question->question); ?></label>
+			  <input require="" type="text" class="form-control" id="<?php echo htmlspecialchars($question->name); ?>" name="<?php echo $question->id; ?>"><br />
 			<?php
 				}
 			}
 			
 			?>
 			  <br />
+			  <hr>
 			  <input type="hidden" name="token" value="<?php echo Token::generate(); ?>">
 			  <input type="submit" class="btn btn-primary" value="<?php echo $banappeal_language['submit']; ?>">
 			</form>
@@ -193,6 +196,7 @@ $page = $banappeal_language['ban_appeal'];
 		?>
 	  </div>
     </div>
+    </section>
     <?php
 	// Footer
 	require('core/includes/template/footer.php');

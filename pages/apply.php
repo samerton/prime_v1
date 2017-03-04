@@ -124,7 +124,7 @@ $page = $navbar_language['staff_apps'];
 	// Load navbar
 	$smarty->display('styles/templates/' . $template . '/navbar.tpl');
 	?>
-	
+	<section id="apply">
 	<div class="container">
 	<?php 
 	    if(Session::exists('staff_app')){
@@ -133,11 +133,12 @@ $page = $navbar_language['staff_apps'];
 	?>
 	  <div class="well">
 		<h2><?php echo $user_language['staff_application']; ?></h2>
+		<hr>
 		<?php
 		if(!isset($completed)){
 		?>
 		<div class="row">
-		  <div class="col-md-5">
+		  <div class="col-md-12">
 			<form action="" method="post">
 			<?php 
 			// Get all questions
@@ -168,14 +169,15 @@ $page = $navbar_language['staff_apps'];
 				} else {
 					// normal input tag
 			?>
-			  <label for="<?php echo htmlspecialchars($question->name); ?>"><?php echo htmlspecialchars($question->question); ?></label>
-			  <input type="text" class="form-control" id="<?php echo htmlspecialchars($question->name); ?>" name="<?php echo $question->id; ?>"><br />
+			  <label require="" for="<?php echo htmlspecialchars($question->name); ?>"><?php echo htmlspecialchars($question->question); ?></label>
+			  <input require="" type="text" class="form-control" id="<?php echo htmlspecialchars($question->name); ?>" name="<?php echo $question->id; ?>"><br />
 			<?php
 				}
 			}
 			
 			?>
 			  <br />
+			  <hr>
 			  <input type="hidden" name="token" value="<?php echo Token::generate(); ?>">
 			  <input type="submit" class="btn btn-primary" value="<?php echo $general_language['submit']; ?>">
 			</form>
@@ -195,6 +197,7 @@ $page = $navbar_language['staff_apps'];
 		?>
 	  </div>
     </div>
+    </section>
     <?php
 	// Footer
 	require('core/includes/template/footer.php');

@@ -1,11 +1,11 @@
 <?php
 header("Content-type: text/css");
+require("edithere.php"); 
 ?>
-<?php require("edithere.php"); ?>
 /*
 
     THEME: PRIME
-    VERSION: 1.5.1
+    VERSION: 1.5.2
 
     AUTHOR: Jona Feucht
     DEV-URI: https://jonafeucht.de
@@ -28,9 +28,21 @@ h1,h2,h3,h4,h5,h6,p,a {
     border-radius: 0px;
 }
 .alert-info {
-    background: #fff;
+    color: #8B0000;
     background-color: #fff;
     border: 1px solid <?php print $color;?>;
+    border-radius: 0px;
+}
+.alert-danger {
+    background: #fff;
+    background-color: #fff;
+    border: 1px solid #8B0000;
+    border-radius: 0px;
+}
+.alert-success {
+    background: #fff;
+    background-color: #fff;
+    border: 1px solid #3c763d;
     border-radius: 0px;
 }
 .panel-primary > .panel-heading {
@@ -58,7 +70,7 @@ h1,h2,h3,h4,h5,h6,p,a {
     background-size: cover;
 }
 #intro .content {
-    padding: 50px 25px 80px;
+    padding: 50px 25px 70px;
 }
 #intro h1 {
     text-align: center;
@@ -82,11 +94,15 @@ h1,h2,h3,h4,h5,h6,p,a {
     border: 3px solid #fff;
 }
 }
-#intro .header_wrapper {
-    background: <?php print $color;?>;
+#wrapper .header_wrapper {
+    color: <?php print $color;?>;
     padding: 8px;
-    border-radius: 4px;
+    border: 1px solid <?php print $color;?>;
+    border-radius: 0px;
     padding-top: 16px;
+    background: #fff;
+    margin-bottom: 10px;
+    text-align: center;
 }
 
 /* navigation section */
@@ -191,6 +207,108 @@ navbar-right {
     background: #fff;
     text-transform: uppercase;
 }
+
+.navbar-inverse {
+	background: <?php print $color;?>;
+	border: none;
+    border-color: transparent;
+	box-shadow: 0 2px 8px 0 rgba(50, 50, 50, 0.03);
+	margin: 0 !important;
+}
+.navbar-inverse img {
+    vertical-align: middle;
+    margin-top: 4px;
+}
+navbar-right {
+    float: right !important;
+    margin-right: 10px;
+}
+.navbar-inverse .navbar-nav li a {
+	color: #fff;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 300;
+	outline: none;
+    font-size: 13px;
+    text-transform: uppercase;
+	padding-right: 15px;
+	padding-left: 20px;
+	line-height: 40px;
+	border-top: 2px solid <?php print $color;?>;
+}
+.navbar-inverse .navbar-nav > li > a:focus, .navbar-inverse .navbar-nav > li > a:hover {
+	color: <?php print $color;?>;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 300;
+	outline: none;
+    font-size: 13px;
+	padding-right: 15px;
+	padding-left: 20px;
+	line-height: 40px;
+	border-top: 2px solid #fff;
+}
+.navbar-inverse .navbar-nav > .active > a {
+	color: #fff;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 300;
+	outline: none;
+    font-size: 13px;
+	padding-right: 15px;
+	padding-left: 20px;
+	line-height: 40px;
+	border-top: 2px solid <?php print $color;?>;
+}
+@media only screen and (max-width: 777px) {
+.navbar-inverse .navbar-nav li a {
+    text-align: center;
+}
+}
+.navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
+	color: <?php print $color;?>;
+	background-color: #fff;
+    transition: all 0.4s ease-in-out;
+	border-top: 2px solid #fff;
+}
+.navbar-inverse .navbar-toggle {
+	border: none;
+	padding-top: 12px;
+}
+.navbar-inverse .navbar-toggle .icon-bar {
+	background: #fff;
+	border-color: transparent;
+}
+.navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus {
+	background-color: transparent;
+    cursor: crosshair;
+}
+.navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
+    color: #333;
+    text-align: center;
+	letter-spacing: 1px;
+}
+.navbar-brand {
+    margin-right: -15px;
+}
+.navbar-brand a {
+	color: #333;
+	font-weight: 200;
+	outline: none;
+    font-size: 24px;
+	padding-right: 15px;
+	padding-left: 20px;
+    line-height: 35px;
+}
+.navbar-inverse .navbar-nav .dropdown-menu li a {
+    color: #696969;
+    background: #fff;
+    text-transform: uppercase;
+    text-align: left;
+    border-top: 0;
+}
+.navbar-inverse .navbar-nav .dropdown-menu li a:hover {
+    color: <?php print $color;?>;
+    background: #fff;
+    text-transform: uppercase;
+}
 /* Index Section */
 #index {
     background: <?php print $bg_color;?>;
@@ -260,6 +378,15 @@ navbar-right {
     background: #fff;
     padding: 40px 30px;
 }
+#forum a:hover, a:focus {
+    color: <?php print $color;?>;
+}
+#forum .pagination li a:hover {
+    color: #fff;
+}
+   #forum .pagination li:last-child {
+    color: <?php print $color;?>;
+}
 #forum .well {
     background: #fff;
     border: 1px solid #ddd;
@@ -314,6 +441,74 @@ navbar-right {
     background: #fff;
     border-radius: 0;
     border: 1px solid #ddd;
+}
+/* Apply */
+#apply {
+    text-align:center;
+}
+#apply .well {
+    background: #fff;
+    border-radius:0;
+    padding-top: 30px;
+}
+#apply input {
+    border-radius: 0;
+    border: 2px solid rgba(137, 137, 137, 0.53);
+    transition: all 0.4s ease-out;
+    background-color: #fff;
+    box-shadow: none;
+    color: #333;
+    margin-top: 12px;
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 14px;
+    letter-spacing: 1.0px;
+}
+#apply input:hover, input:focus {
+    border-radius: 0;
+    border: 2px solid rgba(83, 83, 83, 0.48);
+    transition: all 0.4s ease-out;
+    background-color: #fff;
+    box-shadow: none;
+    margin-top: 12px;
+    font-family: 'Open Sans', sans-serif;
+    margin-bottom: 14px;
+    letter-spacing: 1.0px;
+}
+#apply .btn-primary {
+    background: #2A363F;
+    border-radius: 0;
+    color: #fff;
+    border: 3px solid #fff;
+    transition: all 0.4s ease-out;
+}
+#apply .btn-primary:hover {
+    background: #2A363F;
+    border-radius: 0;
+    color: #fff;
+    border: 3px solid #ddd;
+}
+/* Members */
+#members {
+    padding-bottom: 30px;
+}
+#members .container {
+    background: #fff;
+    padding: 40px 30px;
+}
+#members .nav-pills > li > a {
+    background: #fff;
+    border-radius:0;
+    border: 1px solid transparent;
+    transition: .5s ease-out all;
+}
+#members .nav-pills > li > a:hover a:focus {
+    background: #fff;
+    border-radius:0;
+    border: 1px solid <?php print $color;?>;
+}
+#members .nav-pills > li.active > a {
+    background: <?php print $color;?>;
+    border-radius:0;
 }
 /* SignIn */
 #signin h2 {
@@ -372,6 +567,9 @@ navbar-right {
 }
 #profil .nav-tabs > li.active > a {
     border-radius: 0;
+}
+#profil .well {
+background:#fff;
 }
 .label-danger {
     background-color: darkred;
@@ -509,7 +707,7 @@ navbar-right {
 #foot {
     background: <?php print $foot_color;?>;
     margin-top: 10px;
-    border-top: 3px solid rgba(42, 123, 161, 0.62);
+    border-top: 3px solid <?php print $color;?>;
     text-align: center;
 }
 #foot hr {

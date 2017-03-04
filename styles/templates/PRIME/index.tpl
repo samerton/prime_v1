@@ -1,3 +1,15 @@
+<section id="wrapper">
+   <div class="container">
+    <div class="row">
+        <div class="col-md-12">
+        <div class="header_wrapper">
+         <p>{$PLAYERS_ONLINE}</p>
+         <p>{$CONNECT_WITH}</p>
+      </div>
+        </div>
+    </div>
+</div>
+</section>
 <section id="index">
 <div class="container">
   <div class="row">
@@ -30,10 +42,6 @@
 	  <!-- Social -->
 	  <h2>{$SOCIAL}</h2>
         <hr>
-      <div class="header_wrapper">
-         <p>{$PLAYERS_ONLINE}</p>
-         <p>{$CONNECT_WITH}</p>
-      </div>
         
     <div class="header_wrapper">
 	  {if !empty($TWITTER_FEED)}

@@ -40,12 +40,10 @@
 <div class="container">
 {$GLOBAL_MESSAGES}
 {if isset($ANNOUNCEMENTS) && !empty($ANNOUNCEMENTS)}
-  <div class="container">
   {foreach from=$ANNOUNCEMENTS item=item}
     <div class="alert alert-{$item.type}{if $item.can_close == 1} alert-announcement-{$item.id} alert-dismissible{/if}" id="{$item.id}">
 	  {if $item.can_close == 1}<button type="button" class="close close-announcement" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>{/if}
 	  {$item.content}
-	</div>
     </div>
   {/foreach}
 {/if}

@@ -52,10 +52,10 @@ if(!in_array('Members', $enabled_addon_pages)){
 	// Load navbar
 	$smarty->display('styles/templates/' . $template . '/navbar.tpl');
 	?>
-
+    <section id="members">
     <div class="container">	
 	  <div class="row">
-		<div class="col-md-13">
+		<div class="col-md-12">
 		  <br />
 		
 		  <ul class="nav nav-pills">
@@ -137,7 +137,7 @@ if(!in_array('Members', $enabled_addon_pages)){
 		</div>
       </div>	  
     </div>
-	
+	</section>
 	<?php
 	// Footer
 	require('core/includes/template/footer.php');
